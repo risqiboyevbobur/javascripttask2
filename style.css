@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  height: 100vh;
+  justify-content: center;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://avatars.mds.yandex.net/i?id=6a6aa8c87b159ffb2c90bf8f37af1269cf020714-9181440-images-thumbs&n=13);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.realWorld {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.realWorld p {
+  width: 600px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+  line-height: 24px;
+}
+.realWorld h1 {
+  font-size: 50px;
+  color: #fff;
+}
+
+.sign-up {
+  padding: 12px 30px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(205, 39, 72);
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 410px;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.modal-content {
+  padding: 30px;
+}
+
+.modal-form div {
+  margin: 20px 0;
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  border: none;
+  width: 100%;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  cursor: pointer;
+}
+.modal-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.modal-container .submit-btn {
+  padding: 10px 30px;
+  font-weight: bold;
+  background: rgb(176, 27, 56);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-container.show-modal {
+  display: block;
+}
